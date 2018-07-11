@@ -7,9 +7,19 @@
 
 # for num in range(1, 11):
 #     print(num)
+#
+# num = 1
+#
+# while num < 11:
+#     print(num)
+#     num += 1
 
-num = 1
+from random import randint
 
-while num < 11:
-    print(num)
-    num += 1
+number = 0
+i = 0
+
+while number != 5:
+    number = randint(1, 10)
+    i += 1
+    print(number, i)
