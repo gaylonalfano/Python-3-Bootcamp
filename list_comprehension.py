@@ -39,6 +39,8 @@ string_list = [str(num) for num in numbers]
 print(string_list)  # ['1', '2', '3', '4', '5']
 
 
+
+
 # List comprehension with conditional IF logic
 evens = [num for num in numbers if num % 2 == 0]
 odds = [num for num in numbers if num % 2 != 0]
