@@ -20,3 +20,9 @@ print(yay[::-1])
 names = ['James', 'Michelle', 'Gaylon']
 names[0], names[1], names[2] = names[1], names[0], names[2]
 print(names)
+
+# Another exercise
+multiple_of_12 = [val for val in list(range(1, 101)) if val % 12 == 0]
+
+# Remove vowels
+no_vowels = [char for char in 'amazing' if char not in 'aeiou']

@@ -38,6 +38,15 @@ print([bool(val) for val in [3, [1], 'Gaylon']])
 string_list = [str(num) for num in numbers]
 print(string_list)  # ['1', '2', '3', '4', '5']
 
+answer = [person[0] for person in ["Elie", "Tim", "Matt"]]
+answer2 = [val for val in [1,2,3,4,5,6] if val % 2 == 0]
+
+# for person in persons:
+#     answer = answer.append(person[0])
+#
+# for num in numbers:
+#     if num % 2 == 0:
+#         answer2.append(num)
 
 
 
@@ -51,4 +60,22 @@ print([num * 2 if num % 2 == 0 else num / 2 for num in numbers])
 
 with_vowels = 'This is so much fun!'
 print(''.join(char for char in with_vowels if char not in 'aeiou'))
+
+
+# Exercise (my version)
+l1 = [1, 2, 3, 4]
+l2 = [3, 4, 5, 6]
+ans = []
+[ans.append(val) for val in l1 if val in l2]
+print(ans)
+
+words = ['Elie', 'Tim', 'Matt']
+ans2 = []
+[ans2.append(word[::-1].lower()) for word in words]
+print(ans2)
+
+# Instructor's solution:
+answer_1 = [val for val in [1,2,3,4] if val in [3,4,5,6]]
+#the slice [::-1] is a quick way to reverse a string
+answer_2 = [val[::-1].lower() for val in ["Elie", "Tim", "Matt"]]
 
