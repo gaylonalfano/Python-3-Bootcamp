@@ -64,6 +64,37 @@ else:
 # clear
 # instructor.clear()
 
+# setdefault(key to check for, value to set if key DOES NOT EXIST)
+# Good for ensuring that a key exists.
+spam = {'name': 'Pooka', 'age': 5}
+spam.setdefault('color', 'black')
+print(f'Here is spam: {spam}')
+spam.setdefault('color', 'white')  # Still will be 'black' since key 'color' already exists
+
+'''
+Program that counts the number of occurrences of each letter in a string
+'''
+
+message = 'It was a bright cold day in April, and the clocks were striking thirteen.'
+
+def count_dict(string):
+    count = {letter: string.count(letter) for letter in string}
+    return count
+
+print(count_dict(message))
+
+# count = {}
+#
+# for character in message:
+#     count.setdefault(character, 0)
+#     count[character] += 1
+#
+# print(count)
+# pprint.pprint(count) - Nice print out view for Dictionaries
+
+
+
+
 
 # Copy()
 d = dict(a=1, b=2, c=3)

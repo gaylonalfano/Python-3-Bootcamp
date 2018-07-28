@@ -65,6 +65,8 @@ nums[0: 4: 2] # (1, 3)
 # You cannot access items in a set by index
 # Used for: When you need to keep track of a collection of elements,
 # but you don't care about ordering, keys, or values and duplicates
+# SETS don't seem to work with values that equal boolean "True" - odd... "False" works...
+# See function exercises part 1 - INTERSECTION()
 
 # Creating .set()
 s = set({1, 2, 3, 4, 5, 5, 5, 'a', 'b', 23.3334})  # {1, 2, 3, 4, 5}
