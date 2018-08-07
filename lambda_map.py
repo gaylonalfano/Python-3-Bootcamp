@@ -75,3 +75,32 @@ def decrement_list(list_of_nums):
     return list(map(lambda x: x-1, list_of_nums))
 
 print(decrement_list([5, 4, 3, 2, 1]))  # [4, 3, 2, 1, 0]
+
+
+
+# TRIPLE AND FILTER() - Accepts list of numbers, filter out those not divisible by 4,
+# return new list where every remaining number is tripled
+'''
+triple_and_filter([1,2,3,4]) # [12]
+triple_and_filter([6,8,10,12]) # [24,36]
+'''
+
+# Using map and filter:
+def triple_and_filter(nums):
+    return list(map(lambda x: x * 3, filter(lambda n: n % 4 == 0, nums)))
+
+
+# Using list comprehension:
+def triple_and_filter2(nums):
+    return [num*3 for num in nums if num % 4 == 0]
+
+
+# Student solution:
+def triple_and_filter3(list_of_nums):
+    return [item*3 for item in list(filter(lambda x:x%4 == 0,list_of_nums))]
+
+print(triple_and_filter([6, 8, 10, 12]))  # 24, 36
+print(triple_and_filter2([6, 8, 10, 12]))
+
+print(triple_and_filter([1,2,3,4]))
+print(triple_and_filter2([1,2,3,4]))
