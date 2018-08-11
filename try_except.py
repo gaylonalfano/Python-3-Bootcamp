@@ -11,6 +11,38 @@ except NameError as err:
 '''
 
 
+'''
+WHEN TO USE TRY/EXCEPT VS. RAISE:
+
+You would want to use try-except when you want to try running a code that may or may not cause an error, 
+and you want to catch that error in the except block and add some additional logic that needs to get run 
+if the error does get triggered. In this exercise, we are just returning messages to the user which explain 
+what went wrong and that only numbers can be used/no zero for division. Really important difference is that 
+if you don't raise an error within try-except, the code under the blocks can continue running, the script 
+doesn't necessarily need to stop like when using raise alone. It's also considered a cleaner approach to
+ try executing a potentially error-prone code and catching those errors if they happen.
+
+raise can be used with try-except, where you can raise a custom error for the user, for example. It can also
+ be used alone for your own errors, when you want to check a value of something and if it isn't what you except, 
+ you can just directly throw an error to the user and stop the script.
+
+So, try is used to execute code that might raise an Exception that you're expecting. Instead of stopping 
+the program, you can catch the exception and deal with it in your code. Also, finally can be really useful 
+in the combination, see here. The important point is that it doesn't have to stop the execution, the code 
+below try-except can keep running - you can set some values in the except block which will then make the 
+code below works differently, and adapt to the error that got triggered in the try block.
+
+Read more here: https://stackoverflow.com/questions/40182944/difference-between-raise-try-and-assert
+
+Please let me know if you have any more questions.
+
+Regards,
+Zarko
+'''
+
+
+
+
 
 # try:
 #     foobar
