@@ -62,3 +62,8 @@ print_art(msg, color)
 # text = input("What would you like to print? ")
 # color = input("What color? ")
 # cp(ff(text), color) if color in COLORS.keys() else cp(ff(text), 'magenta')
+
+
+# Could also place the input() when you call the function:
+# print_art(input("What message do you want to print? "), input("What color? "))
+
