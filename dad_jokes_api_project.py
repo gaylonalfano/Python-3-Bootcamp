@@ -6,14 +6,14 @@ from random import choice, shuffle
 while True:
     #ascii art title: Dad Joke 3000
     title = figlet_format("Dad Joke 3000")
-    title_colored = colored(title, color='yellow')
-    print(title_colored)
+    title = colored(title, color='yellow')
+    print(title)
 
     #Accept user input for topic
     topic_search = input("Wanna hear something funny? Give me any topic or type 'Q' to quit and I'll tell you: ")
 
     if topic_search.upper() == 'Q':
-        print("No problem! See you next time")
+        print("Thanks for listening! See you next time!")
         break
     else:
         # Search/collect API data/results
@@ -31,30 +31,36 @@ while True:
         number_of_jokes = len(topic_jokes)
 
         if number_of_jokes == 0:
-            print(f"Oops! I found {number_of_jokes} jokes about {data['search_term']}. Try a different topic.")
+            print(f"Oops! I found {number_of_jokes} jokes about {topic_search}. Try a different topic.")
         elif number_of_jokes == 1:
-            print(f"You're in luck! I have {number_of_jokes} joke about {data['search_term']}. Here it is: ")
+            print(f"You're in luck! I have {number_of_jokes} joke about {topic_search}. Here it is: ")
             print(topic_jokes[0])
         else:
-            print(f"I've got {number_of_jokes} jokes about {data['search_term']}. Here's one: ")
+            print(f"I've got {number_of_jokes} jokes about {topic_search}. Here's one: ")
             print(topic_jokes.pop())
             number_of_jokes -= 1
 
             while number_of_jokes > 0:
-                show_next_joke = input(f"Want another {data['search_term']} joke? I've got {number_of_jokes} left. (Y/N) ")
+                show_next_joke = input(f"Want another {topic_search} joke? I've got {number_of_jokes} left. (Y/N) ")
 
                 if show_next_joke.upper() == 'N':
-                    print("No problem!")
+                    print("Not so funny, huh?")
                     break
                 else:
                     print(topic_jokes.pop())
                     number_of_jokes -= 1
                     if number_of_jokes == 0:
-                        print(f"Doh! No more {data['search_term']} jokes.")
+                        print(f"Doh! No more {topic_search} jokes.")
 
 
 
-
+'''
+Possible improvements/questions:
+- How to use try/except in this?
+- How to try to search for the plural version (ex. 'kids' = 0 jokes; 'kid' = 4 jokes)
+- Any place/reason to add a function?
+- How to use .pop() and choice() together? Ex. l.pop(choice(l))
+'''
 
 
 
@@ -71,10 +77,10 @@ while True:
 #
 #     while True:
 #         if data['total_jokes'] == 0:
-#             print(f"Oops! I found {data['total_jokes']} jokes about {data['search_term']}. Try a different topic.")
+#             print(f"Oops! I found {data['total_jokes']} jokes about {topic_search}. Try a different topic.")
 #             return False
 #         else:
-#             print(f"I've got {data['total_jokes']} jokes about {data['search_term']}. Here's one: ")
+#             print(f"I've got {data['total_jokes']} jokes about {topic_search}. Here's one: ")
 #             print(choice(data['results'])['joke'])
 #             break
 #
