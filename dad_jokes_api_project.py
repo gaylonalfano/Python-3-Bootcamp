@@ -63,8 +63,6 @@ Possible improvements/questions:
 '''
 
 
-
-
 # def search_topic(topic):
 #     # Search/collect API data/results
 #     url = "https://icanhazdadjoke.com/search"
@@ -121,7 +119,7 @@ Possible improvements/questions:
 #
 # print(res)
 
-# Student Example with WHILE LOOP: ===========================
+# ========== Student Example with WHILE LOOP: ===========================
 # import requests
 # import random
 #
@@ -148,3 +146,41 @@ Possible improvements/questions:
 #         else:
 #             print("I've got {} jokes about {}. Here's one:\n".format(number_jokes, search))
 #             print(random.choice(data["results"])["joke"])
+
+
+
+# ========= FUNCTIONS example ==================
+# import random
+# import requests
+# import pyfiglet
+# import termcolor
+#
+#
+# def color():
+#     ascii_msg = pyfiglet.figlet_format('Dad Joke 3000')
+#     return termcolor.colored(ascii_msg, color='magenta')
+#
+#
+# def topic_selection():
+#     selection = input('Let me tell you a joke! Give me a topic: ')
+#     return selection
+#
+#
+# def selection_joke():
+#     topic = topic_selection()
+#     url = 'https://icanhazdadjoke.com/search'
+#     json = {'accept': 'application/json'}
+#     prms = {'term': topic}
+#     res = requests.get(url, headers=json, params=prms)
+#     selection = res.json().get('results')
+#     if len(selection) > 1:
+#         joke = random.choice(selection).get('joke')
+#         return f'I have {len(selection)} jokes for {topic}. Here it comes one:\n{joke}'
+#     elif len(selection) == 1:
+#         joke = selection[0].get('joke')
+#         return f'I have one joke for {topic}. Here it comes:\n{joke}'
+#     return f'Sorry I don\'t have jokes for {topic}'
+#
+#
+# print(color())
+# print(selection_joke())
