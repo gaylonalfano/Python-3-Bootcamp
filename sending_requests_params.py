@@ -54,10 +54,11 @@ However, better is to pass params={"k
 response = requests.get(
     url,
     headers={"Accept": "application/json"},
-    params={"term": "cat", "limit": 1}  # "text/plain", "term": user_input
+    params={"term": "cat", "limit": None}  # "text/plain", "term": user_input
 )
 
-data = response.json()  # .json() returns a DICT
-print(data["results"])  # Returns a list of dictionaries
+data = response.json()  # .json() returns a DICT. data.keys() ['current_page', 'limit', ...]
+print(data.keys())
+#print(len(data["results"]), data["results"])  # Returns a list of dictionaries
 # print(data['joke'])
 # print(f"status: {data['status']}")
