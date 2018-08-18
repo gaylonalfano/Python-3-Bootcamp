@@ -55,11 +55,36 @@ while True:
 
 
 '''
-Possible improvements/questions:
-- How to use try/except in this?
-- How to try to search for the plural version (ex. 'kids' = 0 jokes; 'kid' = 4 jokes)
-- Any place/reason to add a function?
-- How to use .pop() and choice() together? Ex. l.pop(choice(l))
+
+Zarko — Teaching Assistant  · 2 hours ago  Answer 
+Hello Gaylon,
+
+Thanks for sharing your enhanced exercise, that looks good! I'm sure it was a lot of fun to come up with it, and a great way to practice your skills.
+
+You would use try-except blocks whenever you want to handle potential expected errors.
+
+There might be errors you know could potentially happen, based on which you want your program to react a certain way. You could use it when querying your API, to handle potential errors with the server.
+
+You can watch an addition video tutorial on it here: https://www.youtube.com/watch?v=NIWwJbo-9_8
+
+The ideal situation for your searching question would be that the API supports less strict searching (fuzzy searching). If you were to make your API, you would implement the fuzzy search logic server-side. One idea that comes to mind is to get all jokes, save them locally and then use something like this to find approximate matches: https://marcobonzanini.com/2015/02/25/fuzzy-string-matching-in-python/.
+
+The choice() method from random will pick a random element from the list, while pop() takes an index number. You may look into the list remove() method, see here.
+
+Your code can work with and without functions, but we can use them to make things more organized, modular, and easier to read. When you're designing and writing your program, you can use a function where there is a specific action to take place; each function performs a specific job and, merged together, they create the whole program. Also, anytime you're going to be doing the same thing multiple times, you should use a function instead of writing the code twice.
+
+In your exercise, you could have made a main game function, then a separate function to fetch the joke from your API (which takes the topic_search argument). Also, you could write a function that prints your results to the user.
+
+Hope that helps, good luck coding!
+
+Regards,
+Zarko - I'm a Teaching Assistant working for Colt and I will be helping out on the Q&A boards. Colt will also still be around and actively participate in the community.
+
+
+
+
+
+
 '''
 
 
