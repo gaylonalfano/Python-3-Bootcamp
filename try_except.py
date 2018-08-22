@@ -104,10 +104,10 @@ def divide(a, b):
     except TypeError as err:  # can add 'as err'
         print(f'{a} and {b} must be ints or floats')
         print(err)
-    # else:
-    #     print(f"{a} divided by {b} is {result}")
+    else:
+        print(f"{a} divided by {b} is {result}")
 
 
-#print(divide(1, 2))
-print(divide(1, 'a'))
+print(divide(1, 2))
+#print(divide(1, 'a'))
 #print(divide(1, 0))
