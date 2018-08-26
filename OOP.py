@@ -88,4 +88,45 @@ Think of driving a car and using the steering wheel. Don't know how all the inne
 steering wheel. We just turn the wheel (that's our interface) and it does everything else behind the
 scenes, under the car, out of site basically. We only expose what is needed.
 
+
+INHERITANCE - Imagine Reddit's platform and you're trying to create that. The users have
+a few different levels (user, moderator, admin, etc.). You could create 3 different classes.
+But they have a lot that is shared (email, username, password, comments, login, logout, etc.).
+We could use INHERITANCE, which is a key feature of OOP is the ability to define a class
+which inherits from another class (a "base" or "parent" class). So back to Reddit, you could
+have a "base" class called User that has all the common shared parts (email, login, etc.).
+Then you could have a Moderator class that inherits from User, etc.
+
+So how do you tell Python that one thing is inheriting something from another?
+In Python, inheritance works by passing the parent class as an argument to the definition
+of a child class:
+
+class Animal:
+    def make_sound(self, sound):
+        print(sound)
+
+    cool = True
+
+class Cat(Animal):  
+    pass
+
+gandalf = Cat()
+gandalf.make_sound("meow")  # meow
+gandalf.cool  # True
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 '''
