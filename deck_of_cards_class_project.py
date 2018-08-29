@@ -58,13 +58,26 @@ class Deck:
         #  "Deck of {} cards".format(len(self.cards))
         #  f"Deck of {len(self.cards)} cards"
 
+    def __iter__(self):
+        return iter(self.cards)
+    '''
+    Once we learn GENERATORS, we can also write it like this:
+    def __iter__(self):
+        for card in self.cards:
+            yield card
+    '''
+    def reset(self):
+        '''Reset the deck back to original init state'''
+        self.cards = [Card(s, v) for v in Card.available_values for s in Card.available_suits]
+        return self
+
     def count(self):
         return len(self.cards)
 
     def shuffle(self):
         if self.count() < 52:
             raise ValueError("Only full decks can be shuffled")
-        return shuffle(self)
+        return shuffle(self.cards)  # !!! Forgot to return self.CARDS!!
 
     def _deal(self, number=1):
         if self.count() == 0:
@@ -86,12 +99,20 @@ class Deck:
     def deal_hand(self, number):
         return self._deal(number)
 
+my_deck = Deck()
+my_deck.shuffle()
+my_deck.reset()
 
-d = Deck()
-print(d)
-print(d.cards)
-d.shuffle()
-print(d.cards)
+for card in my_deck:
+    print(card)
+
+
+
+# d = Deck()
+# print(d)
+# print(d.cards)
+# d.shuffle()
+# print(d.cards)
 # d.deal_hand(5)
 # print(d.count())
 # print(d.deal_card())

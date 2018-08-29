@@ -1,13 +1,30 @@
 '''
 Reference:  https://docs.python.org/3/library/operator.html
 
+Sample of magic methods:
+__add__
+__mul__
+__missing__
+__setitem__
+__getitem__
+__len__
+__iter__
+__reversed__
+__contains__
+
+
 Operator overloading?
 __eq__, __ne__, __lt__, __gt__
+
+
 
 8 + 2  # 10
 "8" + "2"
 
-What's happening in these examples?
+What's happening in these examples? How does Python know how to interpret the +
+operator differently in these cases? ANSWER: The first argument has a SPECIAL METHOD
+that defines what to do with the + operator. The actual operation Python performs
+is something like: x.__add__(y)
 
 The + operator is shorthand for a special method call __add__() that gets
 called on the first operand.
@@ -105,24 +122,63 @@ from dict directly and WE'RE NOT PASSING DATA OR ATTRIBUTES. The dict__init__() 
 which means you don't have to specify it (since we're only adding methods and no other data/attributes).
 The dict__init__() runs due to MRO.
 
+The key takeaway is that special methods and inheritance allows for some cool things. For example, 
+if you inherit from any builtin type (list, dict, etc.) or any other class someone else wrote,
+you can run/call the parent's (super) special methods and expand/extend on them but still being
+able to use the base special/magic methods.
 
 '''
-class GrumpyDict(dict):
-    def __repr__(self):
-        print("None of your business!")
-        return super(GrumpyDict, self).__repr__()
-    
-
-data = GrumpyDict({"first": "Tom", "animal": "cat"})
-print(data)
-
-
-
-
-
-
+# class GrumpyDict(dict):
+#     def __repr__(self):
+#         print("None of your business!")
+#         # return super(GrumpyDict, self).__repr__()  # Sort of like the super OF GrumpyDict, which is dict
+#         return super().__repr__()  # this is dict's version of __repr__ {k:v, k:v, k:v}
+#
+#     def __missing__(self, key):
+#         print(f"You want {key}? Well it ain't here!")
+#
+#     def __setitem__(self, key, value):
+#         print("You want to change the dictionary?\nOkay fine...")
+#         super().__setitem__(key, value)
+#
+#     def __contains__(self, item):  # Returns True/False
+#         print(f"No {item} here! Scram!")
+#         return False  # Even if it's in there! It's just grumpy :)
+#
+#
+#
+# data = GrumpyDict({"first": "Tom", "animal": "cat"})
+# print(data)
+# data['city']  # Error -- see def __missing__ method
+# data['city'] = 'Austin'
+# print(data)
+# data.__contains__("dog")
+# "city" in data
 
 # d = GrumpyDict({"name": "Yoko", "city": "New York"})
 # print(d)  # None of your business {"name": "Yoko", "city": "New York"}
 # d["city"] = "SF"
 # print(d)  # Why do you always have to change things? \nUgh fine, setting city to SF\nNone of your business
+
+'''
+SPECIAL METHODS TRAIN EXERCISE - Create a class Train with one attribute: num_cars
+Also has two special/magic/dunder methods __print__ and __len__
+'''
+class Train:
+
+    def __init__(self, num_cars):
+        self.num_cars = num_cars
+
+    def __repr__(self):
+        return f"{self.num_cars} car train"
+
+    def __len__(self):
+        return self.num_cars
+
+a_train = Train(4)
+print(a_train)
+print(len(a_train))
+
+# b_train = Train("seven")
+# print(b_train)
+# print(len(b_train))

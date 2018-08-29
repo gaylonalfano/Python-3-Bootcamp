@@ -3,6 +3,9 @@ METHOD RESOLUTION ORDER - Whenever you create a class, Python sets a MRO for tha
 class, which is the order in which Python will look for methods on instances of that class.
 It's like a hierarchy. Pretty complex algorithm for how Python does this.
 
+The BEST/PREFERRED way to call/reference the parent is by using super().__init__ since
+it follows MRO automatically.
+
 Three different ways of accessing the MRO for your class:
 * __mro__ attribute on the class
 * use the mro() method on the class
