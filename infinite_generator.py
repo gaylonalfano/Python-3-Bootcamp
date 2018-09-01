@@ -37,6 +37,22 @@ def current_beat():
         yield nums[i]
         i += 1
 
+# Student's:
+def current_beat2():
+    while True:
+        for num in (1, 2, 3, 4):
+            yield num
+
+
+counter2 = current_beat2()
+print(next(counter2))
+print(next(counter2))
+print(next(counter2))
+print(next(counter2))
+print(next(counter2))
+
+
+
 #My attempt:
 # def current_beat():
 #     nums = (1, 2, 3, 4)
@@ -49,14 +65,14 @@ def current_beat():
 #             i += 1
 
 
-
-counter = current_beat()
-print(next(counter))
-print(next(counter))
-print(next(counter))
-print(next(counter))
-print(next(counter))
-print(next(counter))
+#
+# counter = current_beat()
+# print(next(counter))
+# print(next(counter))
+# print(next(counter))
+# print(next(counter))
+# print(next(counter))
+# print(next(counter))
 
 
 
