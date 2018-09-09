@@ -1,0 +1,5 @@
+{
+    "git.ignoreLimitWarning": true,
+    "editor.suggestSelection": "recentlyUsed",
+    "python.autoComplete.addBrackets": true
+}

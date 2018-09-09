@@ -1,0 +1,1245 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="f755c3cb-8f29-471b-964b-6e763f021f73" name="Default" comment="Decorators enforcing types, args, delaying execution, etc.">
+      <change afterPath="$PROJECT_DIR$/testing.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/testing_assertions.py" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FUSProjectUsageTrigger">
+    <session id="1439720935">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.closed" value="5" />
+          <entry key="project.open.time.0" value="1" />
+          <entry key="project.open.time.4" value="1" />
+          <entry key="project.open.time.5" value="3" />
+          <entry key="project.opened" value="5" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="Python" value="74" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="PLAIN_TEXT" value="1022" />
+          <entry key="Python" value="96858" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="py" value="74" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="Python Console" value="2961" />
+          <entry key="dummy" value="128" />
+          <entry key="py" value="93897" />
+          <entry key="txt" value="894" />
+        </counts>
+      </usages-collector>
+    </session>
+  </component>
+  <component name="FavoritesManager">
+    <favorites_list name="ModernPython3Bootcamp" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/decorators_higher_order_functions_closures.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="405">
+              <caret line="27" selection-start-line="27" selection-end-line="27" />
+              <folding>
+                <marker date="1535856685097" expanded="true" signature="1433:1523" ph="..." />
+                <marker date="1535856685097" expanded="true" signature="1433:1524" ph="..." />
+                <marker date="1535856685097" expanded="true" signature="1568:1586" ph="..." />
+                <marker date="1535856685097" expanded="true" signature="1739:1744" ph="..." />
+                <marker date="1535856685097" expanded="true" signature="1983:1988" ph="..." />
+                <marker date="1535856685097" expanded="true" signature="2315:2320" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/decorators_logging_wraps_metadata.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1695">
+              <caret line="113" selection-start-line="113" selection-end-line="113" />
+              <folding>
+                <marker date="1535925245305" expanded="true" signature="2664:2666" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/decorators_enforce_arguments.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="180">
+              <caret line="12" selection-start-line="12" selection-end-line="12" />
+              <folding>
+                <marker date="1536100397315" expanded="true" signature="4331:4475" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/decorators_ensure_first_argument.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="105">
+              <caret line="7" selection-start-line="7" selection-end-line="7" />
+              <folding>
+                <marker date="1536103710313" expanded="true" signature="350:355" ph="..." />
+                <marker date="1536103710313" expanded="true" signature="975:1091" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/decorators_delay_function_execution.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="450">
+              <caret line="30" column="53" selection-start-line="30" selection-start-column="53" selection-end-line="30" selection-end-column="53" />
+              <folding>
+                <element signature="e#213#240#0" expanded="true" />
+                <marker date="1536242348505" expanded="true" signature="1830:1847" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/testing.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="450">
+              <caret line="49" column="34" selection-start-line="49" selection-start-column="34" selection-end-line="49" selection-end-column="34" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/testing_assertions.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="345">
+              <caret line="23" column="27" selection-start-line="23" selection-start-column="27" selection-end-line="23" selection-end-column="27" />
+              <folding>
+                <marker date="1536276680835" expanded="true" signature="261:266" ph="..." />
+                <marker date="1536276680835" expanded="true" signature="718:723" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/decorator_enforce_argument_types.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="183">
+              <caret line="46" column="29" lean-forward="true" selection-start-line="46" selection-start-column="29" selection-end-line="46" selection-end-column="29" />
+              <folding>
+                <marker date="1536240920197" expanded="true" signature="959:964" ph="..." />
+                <marker date="1536240920197" expanded="true" signature="1040:1053" ph="..." />
+                <marker date="1536240920197" expanded="true" signature="1396:2048" ph="..." />
+                <marker date="1536240920197" expanded="true" signature="1535:1552" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ternary_operator_generators.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="450">
+              <caret line="30" column="18" selection-start-line="30" selection-start-column="18" selection-end-line="30" selection-end-column="18" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/decorator_speedtest.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="183">
+              <caret line="19" selection-start-line="19" selection-end-line="19" />
+              <folding>
+                <element signature="e#495#522#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>c</find>
+      <find>.get</find>
+      <find>expon</find>
+      <find>setde</find>
+      <find>count()</find>
+      <find>sum_all_n</find>
+      <find>num_of_jokes</find>
+    </findStrings>
+    <replaceStrings>
+      <replace />
+      <replace>number_of_jokes</replace>
+    </replaceStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/helpers.py" />
+        <option value="$PROJECT_DIR$/exercise.py" />
+        <option value="$PROJECT_DIR$/termicolor_package.py" />
+        <option value="$PROJECT_DIR$/ascii_art.py" />
+        <option value="$PROJECT_DIR$/autopep8.py" />
+        <option value="$PROJECT_DIR$/autopep8_ugly_code.py" />
+        <option value="$PROJECT_DIR$/__name__variable.py" />
+        <option value="$PROJECT_DIR$/say_sup.py" />
+        <option value="$PROJECT_DIR$/say_hi.py" />
+        <option value="$PROJECT_DIR$/http_introduction.py" />
+        <option value="$PROJECT_DIR$/http_requests.py" />
+        <option value="$PROJECT_DIR$/headers.py" />
+        <option value="$PROJECT_DIR$/sending_requests_params.py" />
+        <option value="$PROJECT_DIR$/dad_jokes_api_project.py" />
+        <option value="$PROJECT_DIR$/dundermethods_namemangling.py" />
+        <option value="$PROJECT_DIR$/OOP_FirstClassEver.py" />
+        <option value="$PROJECT_DIR$/pet.py" />
+        <option value="$PROJECT_DIR$/class_methods.py" />
+        <option value="$PROJECT_DIR$/__repr__method.py" />
+        <option value="$PROJECT_DIR$/try_except.py" />
+        <option value="$PROJECT_DIR$/OOP.py" />
+        <option value="$PROJECT_DIR$/inheritance_socialmedia_user.py" />
+        <option value="$PROJECT_DIR$/multiple_inheritance.py" />
+        <option value="$PROJECT_DIR$/polymorphism_OOP.py" />
+        <option value="$PROJECT_DIR$/inheritance_properties.py" />
+        <option value="$PROJECT_DIR$/super.py" />
+        <option value="$PROJECT_DIR$/method_resolution_order_OOP.py" />
+        <option value="$PROJECT_DIR$/special_magic_methods.py" />
+        <option value="$PROJECT_DIR$/iterators_generators_section.py" />
+        <option value="$PROJECT_DIR$/custom_for_loop_iterator_iterable.py" />
+        <option value="$PROJECT_DIR$/custom_iterator.py" />
+        <option value="$PROJECT_DIR$/deck_of_cards_class_project.py" />
+        <option value="$PROJECT_DIR$/ternary_operator_generators.py" />
+        <option value="$PROJECT_DIR$/music_beat_generator.py" />
+        <option value="$PROJECT_DIR$/infinite_generator.py" />
+        <option value="$PROJECT_DIR$/infinite_generators_99bottlesofbeer.py" />
+        <option value="$PROJECT_DIR$/generators_iterators.py" />
+        <option value="$PROJECT_DIR$/infinite_generators_get_multiples.py" />
+        <option value="$PROJECT_DIR$/generator_expressions.py" />
+        <option value="$PROJECT_DIR$/higher_order_functions.py" />
+        <option value="$PROJECT_DIR$/decorators_higher_order_functions.py" />
+        <option value="$PROJECT_DIR$/decorators_logging_metadata.py" />
+        <option value="$PROJECT_DIR$/decorator_speedtest.py" />
+        <option value="$PROJECT_DIR$/decorators.py" />
+        <option value="$PROJECT_DIR$/decorators_logging_wraps_metadata.py" />
+        <option value="$PROJECT_DIR$/decorators_enforce_arguments.py" />
+        <option value="$PROJECT_DIR$/decorators_ensure_first_argument.py" />
+        <option value="$PROJECT_DIR$/decorator_enforce_argument_types.py" />
+        <option value="$PROJECT_DIR$/decorators_delay_function_execution.py" />
+        <option value="$PROJECT_DIR$/testing.py" />
+        <option value="$PROJECT_DIR$/testing_assertions.py" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" fullScreen="true">
+    <option name="x" value="722" />
+    <option name="width" value="718" />
+    <option name="height" value="900" />
+  </component>
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file:///Users/gaylonalfano/PycharmProjects/ModernPython3Bootcamp/any_all_genexp_sysgetsize.py&#10;comment&#9;ACTION&#9;CommentByLineComment" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Python.testing_assertions">
+    <configuration name="decorator_enforce_argument_types" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="Modern Python 3 Bootcamp" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/decorator_enforce_argument_types.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="decorators_delay_function_execution" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="Modern Python 3 Bootcamp" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/decorators_delay_function_execution.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="decorators_enforce_arguments" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="Modern Python 3 Bootcamp" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/decorators_enforce_arguments.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="decorators_ensure_first_argument" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="Modern Python 3 Bootcamp" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/decorators_ensure_first_argument.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="guessing_game" type="PythonConfigurationType" factoryName="Python">
+      <module name="Modern Python 3 Bootcamp" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/guessing_game.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="testing_assertions" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="Modern Python 3 Bootcamp" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/testing_assertions.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Python.guessing_game" />
+      <item itemvalue="Python.decorators_enforce_arguments" />
+      <item itemvalue="Python.decorators_ensure_first_argument" />
+      <item itemvalue="Python.decorator_enforce_argument_types" />
+      <item itemvalue="Python.decorators_delay_function_execution" />
+      <item itemvalue="Python.testing_assertions" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.testing_assertions" />
+        <item itemvalue="Python.decorators_delay_function_execution" />
+        <item itemvalue="Python.decorator_enforce_argument_types" />
+        <item itemvalue="Python.decorators_ensure_first_argument" />
+        <item itemvalue="Python.decorators_enforce_arguments" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="f755c3cb-8f29-471b-964b-6e763f021f73" name="Default" comment="" />
+      <created>1531254600908</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1531254600908</updated>
+    </task>
+    <task id="LOCAL-00001" summary="Adding commit message via PC window.">
+      <created>1531254867282</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1531254867282</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Adding commit message via PC window.">
+      <created>1531263238106</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1531263238106</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Adding while statements practice and the emoji_art.py">
+      <created>1531339346791</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1531339346791</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Incorporating break and while loops into some old and new files">
+      <created>1531347260100</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1531347260100</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Added guessing_game_v2 with new and improved version">
+      <created>1531429961634</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1531429961634</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Added ability to play again to the RPS game.">
+      <created>1531483577834</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1531483577834</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Added ability to play again to the RPS game.">
+      <created>1531545151331</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1531545151331</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Working with list comprehension now">
+      <created>1531545269566</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1531545269567</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Dictionaries, music playlist challenge, and nested list comprehension">
+      <created>1531758104542</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1531758104542</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Dictionaries, music playlist challenge, and nested list comprehension">
+      <created>1531945164420</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1531945164420</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Dictionary comprehension updated">
+      <created>1531947388513</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1531947388514</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Completed set comprehension, tuples, and sets">
+      <created>1532095416539</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1532095416539</updated>
+    </task>
+    <task id="LOCAL-00013" summary="Functions, parameters vs arguments, and the return keyword">
+      <created>1532113079423</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1532113079423</updated>
+    </task>
+    <task id="LOCAL-00014" summary="Working on function exercises. .count() works on strings too. Need to remember to use DICT comprehension.">
+      <created>1532282333366</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1532282333366</updated>
+    </task>
+    <task id="LOCAL-00015" summary="Completed function exercises part 1. Moving on to functions part 2.">
+      <created>1532744598102</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1532744598102</updated>
+    </task>
+    <task id="LOCAL-00016" summary="Completed functions part 2 for *args and **kwargs.">
+      <created>1532851477371</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1532851477372</updated>
+    </task>
+    <task id="LOCAL-00017" summary="Changed lambdas and built-in file name to lambda_map. Don't want the file to be too long.">
+      <created>1532865056848</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1532865056848</updated>
+    </task>
+    <task id="LOCAL-00018" summary="Changed lambdas and built-in file name to lambda_map. Don't want the file to be too long.">
+      <created>1532865388963</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1532865388963</updated>
+    </task>
+    <task id="LOCAL-00019" summary="Adding files for other built-in functions: any(), all(), filter(), sorted(), min(), max(), sys.getsizeof(), etc.">
+      <created>1533201319637</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1533201319638</updated>
+    </task>
+    <task id="LOCAL-00020" summary="Adding lambda_map file">
+      <created>1533201381200</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1533201381201</updated>
+    </task>
+    <task id="LOCAL-00021" summary="Adding lambda_map file">
+      <created>1533647036301</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1533647036301</updated>
+    </task>
+    <task id="LOCAL-00022" summary="Debugging, pdb, try/except error handling">
+      <created>1533888105429</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1533888105429</updated>
+    </task>
+    <task id="LOCAL-00023" summary="modules, ascii art">
+      <created>1533973007042</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1533973007042</updated>
+    </task>
+    <task id="LOCAL-00024" summary="autopep8 demo with ugly_code file.">
+      <created>1534056993331</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1534056993331</updated>
+    </task>
+    <task id="LOCAL-00025" summary="__name__ variable in python files; if __name__ == &quot;__main__&quot;:">
+      <created>1534058908855</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1534058908855</updated>
+    </task>
+    <task id="LOCAL-00026" summary="APIs, HTTP Introduction, get/post requests, etc.">
+      <created>1534166298372</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1534166298372</updated>
+    </task>
+    <task id="LOCAL-00027" summary="Dad Joke 3000 program">
+      <created>1534318880724</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1534318880724</updated>
+    </task>
+    <task id="LOCAL-00028" summary="Dad Joke 3000 program">
+      <created>1534319660082</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1534319660082</updated>
+    </task>
+    <task id="LOCAL-00029" summary="Dad Joke 3000 program">
+      <created>1534340471739</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1534340471739</updated>
+    </task>
+    <task id="LOCAL-00030" summary="OOP introduction, first Class, instance methods and attributes">
+      <created>1534558258548</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1534558258548</updated>
+    </task>
+    <task id="LOCAL-00031" summary="Class attributes and methods (id(), @classmethod, etc.)">
+      <created>1534580453978</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1534580453978</updated>
+    </task>
+    <task id="LOCAL-00032" summary="Deck of Cards - Card class, Deck class">
+      <created>1534770938385</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1534770938385</updated>
+    </task>
+    <task id="LOCAL-00033" summary="Completed Deck of Cards exercise with both Card and Deck classes">
+      <created>1534899152003</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1534899152003</updated>
+    </task>
+    <task id="LOCAL-00034" summary="Method Resolution Order, Polymorphism, Special Methods, super(), Inheritance">
+      <created>1535247659402</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1535247659402</updated>
+    </task>
+    <task id="LOCAL-00035" summary="Iterables, Iterators, Custom For Loop, Generators, Custom Iterator, Ternary Operator">
+      <created>1535546864107</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1535546864107</updated>
+    </task>
+    <task id="LOCAL-00036" summary="Infinite Generators, Generator Expressions vs. Generator Functions, Generators vs. Lists in speed and memory">
+      <created>1535796114674</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1535796114674</updated>
+    </task>
+    <task id="LOCAL-00037" summary="Decorators, Closures, @wrap(fn), logging functions">
+      <created>1535876890242</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1535876890242</updated>
+    </task>
+    <task id="LOCAL-00038" summary="Decorators enforcing types, args, delaying execution, etc.">
+      <created>1536242399337</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1536242399337</updated>
+    </task>
+    <option name="localTasksCounter" value="39" />
+    <servers />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="722" y="0" width="718" height="900" extended-state="0" />
+    <editor active="true" />
+    <layout>
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49823943" weight="0.23859386" />
+      <window_info id="Structure" order="1" sideWeight="0.50176054" side_tool="true" weight="0.18604651" />
+      <window_info id="Favorites" order="2" sideWeight="0.50176054" side_tool="true" weight="0.18604651" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32891566" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4973822" weight="0.43366337" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32969698" />
+      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.5012225" side_tool="true" weight="0.31030303" />
+      <window_info anchor="bottom" id="Version Control" order="8" sideWeight="0.49887472" weight="0.32820514" />
+      <window_info active="true" anchor="bottom" id="Python Console" order="9" sideWeight="0.4987775" visible="true" weight="0.39638555" />
+      <window_info anchor="bottom" id="Terminal" order="10" weight="0.38598725" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" x="0" y="0" width="209" height="700" id="Documentation" order="3" weight="0.48335552" />
+      <window_info anchor="right" id="Key Promoter X" order="4" weight="0.32834706" />
+    </layout>
+    <layout-to-restore>
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49823943" weight="0.23859386" />
+      <window_info id="Structure" order="1" sideWeight="0.50176054" side_tool="true" weight="0.18604651" />
+      <window_info id="Favorites" order="2" sideWeight="0.50176054" side_tool="true" weight="0.18604651" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32891566" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.4973822" visible="true" weight="0.34698796" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32969698" />
+      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.5012225" side_tool="true" weight="0.31030303" />
+      <window_info anchor="bottom" id="Version Control" order="8" sideWeight="0.49887472" weight="0.32820514" />
+      <window_info anchor="bottom" id="Python Console" order="9" sideWeight="0.4987775" weight="0.34752476" />
+      <window_info anchor="bottom" id="Terminal" order="10" weight="0.30240965" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" x="0" y="0" width="209" height="700" id="Documentation" order="3" weight="0.48335552" />
+      <window_info anchor="right" id="Key Promoter X" order="4" weight="0.32834706" />
+    </layout-to-restore>
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="RECENTLY_FILTERED_USER_GROUPS">
+                <collection />
+              </option>
+              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+                <collection />
+              </option>
+              <option name="COLUMN_ORDER">
+                <list>
+                  <option value="0" />
+                  <option value="1" />
+                  <option value="2" />
+                  <option value="3" />
+                </list>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Dictionaries, music playlist challenge, and nested list comprehension" />
+    <MESSAGE value="Dictionary comprehension updated" />
+    <MESSAGE value="Completed set comprehension, tuples, and sets" />
+    <MESSAGE value="Functions, parameters vs arguments, and the return keyword" />
+    <MESSAGE value="Working on function exercises. .count() works on strings too. Need to remember to use DICT comprehension." />
+    <MESSAGE value="Completed function exercises part 1. Moving on to functions part 2." />
+    <MESSAGE value="Completed functions part 2 for *args and **kwargs." />
+    <MESSAGE value="Changed lambdas and built-in file name to lambda_map. Don't want the file to be too long." />
+    <MESSAGE value="Adding files for other built-in functions: any(), all(), filter(), sorted(), min(), max(), sys.getsizeof(), etc." />
+    <MESSAGE value="Adding lambda_map file" />
+    <MESSAGE value="Debugging, pdb, try/except error handling" />
+    <MESSAGE value="modules, ascii art" />
+    <MESSAGE value="autopep8 demo with ugly_code file." />
+    <MESSAGE value="__name__ variable in python files; if __name__ == &quot;__main__&quot;:" />
+    <MESSAGE value="APIs, HTTP Introduction, get/post requests, etc." />
+    <MESSAGE value="Dad Joke 3000 program" />
+    <MESSAGE value="OOP introduction, first Class, instance methods and attributes" />
+    <MESSAGE value="Class attributes and methods (id(), @classmethod, etc.)" />
+    <MESSAGE value="Deck of Cards - Card class, Deck class" />
+    <MESSAGE value="Completed Deck of Cards exercise with both Card and Deck classes" />
+    <MESSAGE value="Method Resolution Order, Polymorphism, Special Methods, super(), Inheritance" />
+    <MESSAGE value="Iterables, Iterators, Custom For Loop, Generators, Custom Iterator, Ternary Operator" />
+    <MESSAGE value="Infinite Generators, Generator Expressions vs. Generator Functions, Generators vs. Lists in speed and memory" />
+    <MESSAGE value="Decorators, Closures, @wrap(fn), logging functions" />
+    <MESSAGE value="Decorators enforcing types, args, delaying execution, etc." />
+    <option name="LAST_COMMIT_MESSAGE" value="Decorators enforcing types, args, delaying execution, etc." />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/__name__variable.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="28" column="26" selection-start-line="28" selection-start-column="26" selection-end-line="28" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/http_introduction.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="540">
+          <caret line="36" column="30" selection-start-line="36" selection-start-column="30" selection-end-line="36" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/http_requests.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" column="16" selection-start-line="18" selection-start-column="16" selection-end-line="18" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/headers.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" selection-start-line="10" selection-end-line="14" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sending_requests_params.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="885">
+          <caret line="59" column="92" selection-start-line="59" selection-start-column="92" selection-end-line="59" selection-end-column="92" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/say_hi.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="26" column="83" selection-start-line="26" selection-start-column="83" selection-end-line="26" selection-end-column="83" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/say_sup.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="24" column="13" selection-start-line="24" selection-start-column="13" selection-end-line="24" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/debugging_pdb.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1125">
+          <caret line="75" column="7" selection-start-line="75" selection-start-column="7" selection-end-line="75" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/__repr__method.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-76">
+          <caret line="9" column="31" selection-start-line="9" selection-start-column="31" selection-end-line="9" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/set_comprehension.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" selection-start-line="12" selection-end-line="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/RockPaperScissors.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-876" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/debugging_common_errors.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="585">
+          <caret line="39" column="3" selection-start-line="39" selection-start-column="3" selection-end-line="39" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nested_list_comprehension.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="20" selection-start-line="20" selection-end-line="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lambda_map.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1575">
+          <caret line="105" column="36" selection-start-line="105" selection-start-column="36" selection-end-line="105" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/interleaving_strings_zip_join.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dad_jokes_api_project.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1200">
+          <caret line="80" column="168" selection-start-line="80" selection-start-column="168" selection-end-line="80" selection-end-column="168" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dundermethods_namemangling.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="28" lean-forward="true" selection-start-line="8" selection-start-column="28" selection-end-line="8" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Library/Caches/PyCharmCE2018.2/python_stubs/-2090377327/builtins.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="6735">
+          <caret line="796" column="8" selection-start-line="796" selection-start-column="8" selection-end-line="796" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/OOP.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="236">
+          <caret line="103" column="13" lean-forward="true" selection-start-line="103" selection-start-column="13" selection-end-line="103" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pet.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="42" selection-start-line="42" selection-end-line="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/OOP_FirstClassEver.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="247">
+          <caret line="144" column="20" lean-forward="true" selection-start-line="144" selection-start-column="20" selection-end-line="144" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/inheritance_socialmedia_user.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="62" column="33" lean-forward="true" selection-start-line="62" selection-start-column="33" selection-end-line="62" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/multiple_inheritance.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="675">
+          <caret line="45" column="48" selection-start-line="45" selection-start-column="48" selection-end-line="45" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/super.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="452">
+          <caret line="124" column="20" lean-forward="true" selection-start-line="124" selection-start-column="20" selection-end-line="124" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/inheritance_properties.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="261">
+          <caret line="18" column="32" lean-forward="true" selection-start-line="18" selection-start-column="32" selection-end-line="18" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/class_methods.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="287">
+          <caret line="107" column="36" lean-forward="true" selection-start-line="107" selection-start-column="36" selection-end-line="107" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/method_resolution_order_OOP.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="20" column="40" lean-forward="true" selection-start-line="20" selection-start-column="40" selection-end-line="20" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/polymorphism_OOP.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="452">
+          <caret line="67" column="10" lean-forward="true" selection-start-line="67" selection-start-column="10" selection-end-line="67" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/special_magic_methods.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="452">
+          <caret line="178" column="14" lean-forward="true" selection-start-line="178" selection-start-column="14" selection-end-line="178" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/iterators_generators_section.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" selection-start-line="4" selection-end-line="19" selection-end-column="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/try_except.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/deck_of_cards_class_project.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1031">
+          <caret line="111" column="10" lean-forward="true" selection-start-line="111" selection-start-column="10" selection-end-line="111" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/custom_iterator.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="20" column="36" lean-forward="true" selection-start-line="20" selection-start-column="36" selection-end-line="20" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/custom_for_loop_iterator_iterable.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="79">
+          <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/infinite_generators_99bottlesofbeer.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="24" lean-forward="true" selection-start-line="5" selection-start-column="24" selection-end-line="5" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/generators_iterators.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1905">
+          <caret line="127" selection-start-line="127" selection-end-line="139" selection-end-column="18" />
+          <folding>
+            <marker date="1535794792853" expanded="true" signature="1848:2021" ph="..." />
+            <marker date="1535794792853" expanded="true" signature="2522:2529" ph="..." />
+            <marker date="1535794792853" expanded="true" signature="3269:3781" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/infinite_generator.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="17" column="25" selection-start-line="17" selection-start-column="25" selection-end-line="17" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/infinite_generators_get_multiples.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="435">
+          <caret line="29" column="18" selection-start-line="29" selection-start-column="18" selection-end-line="29" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/generator_expressions.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="22" selection-start-line="22" selection-end-line="33" selection-end-column="32" />
+          <folding>
+            <marker date="1535796017753" expanded="true" signature="227:234" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/decorators.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1815">
+          <caret line="121" selection-start-line="99" selection-end-line="121" />
+          <folding>
+            <marker date="1535876555829" expanded="true" signature="746:753" ph="..." />
+            <marker date="1535876555829" expanded="true" signature="905:912" ph="..." />
+            <marker date="1535876555829" expanded="true" signature="953:983" ph="..." />
+            <marker date="1535876555829" expanded="true" signature="1433:1685" ph="..." />
+            <marker date="1535876555829" expanded="true" signature="1800:1807" ph="..." />
+            <marker date="1535876555829" expanded="true" signature="2113:2120" ph="..." />
+            <marker date="1535876555829" expanded="true" signature="2211:2316" ph="..." />
+            <marker date="1535876555829" expanded="true" signature="2343:2350" ph="..." />
+            <marker date="1535876555829" expanded="true" signature="2510:2532" ph="..." />
+            <marker date="1535876555829" expanded="true" signature="3326:3337" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/any_all_genexp_sysgetsize.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="675">
+          <caret line="45" column="62" selection-start-line="45" selection-start-column="62" selection-end-line="45" selection-end-column="62" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/decorator_speedtest.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="183">
+          <caret line="19" selection-start-line="19" selection-end-line="19" />
+          <folding>
+            <element signature="e#495#522#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ternary_operator_generators.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="30" column="18" selection-start-line="30" selection-start-column="18" selection-end-line="30" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/decorators_enforce_arguments.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" selection-start-line="12" selection-end-line="12" />
+          <folding>
+            <marker date="1536100397315" expanded="true" signature="4331:4475" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/decorators_logging_wraps_metadata.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1695">
+          <caret line="113" selection-start-line="113" selection-end-line="113" />
+          <folding>
+            <marker date="1535925245305" expanded="true" signature="2664:2666" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/decorators_higher_order_functions_closures.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="27" selection-start-line="27" selection-end-line="27" />
+          <folding>
+            <marker date="1535856685097" expanded="true" signature="1433:1523" ph="..." />
+            <marker date="1535856685097" expanded="true" signature="1433:1524" ph="..." />
+            <marker date="1535856685097" expanded="true" signature="1568:1586" ph="..." />
+            <marker date="1535856685097" expanded="true" signature="1739:1744" ph="..." />
+            <marker date="1535856685097" expanded="true" signature="1983:1988" ph="..." />
+            <marker date="1535856685097" expanded="true" signature="2315:2320" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/decorators_ensure_first_argument.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" selection-start-line="7" selection-end-line="7" />
+          <folding>
+            <marker date="1536103710313" expanded="true" signature="350:355" ph="..." />
+            <marker date="1536103710313" expanded="true" signature="975:1091" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/decorators_delay_function_execution.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="30" column="53" selection-start-line="30" selection-start-column="53" selection-end-line="30" selection-end-column="53" />
+          <folding>
+            <element signature="e#213#240#0" expanded="true" />
+            <marker date="1536242348505" expanded="true" signature="1830:1847" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/testing.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="49" column="34" selection-start-line="49" selection-start-column="34" selection-end-line="49" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/testing_assertions.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="23" column="27" selection-start-line="23" selection-start-column="27" selection-end-line="23" selection-end-column="27" />
+          <folding>
+            <marker date="1536276680835" expanded="true" signature="261:266" ph="..." />
+            <marker date="1536276680835" expanded="true" signature="718:723" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/decorator_enforce_argument_types.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="183">
+          <caret line="46" column="29" lean-forward="true" selection-start-line="46" selection-start-column="29" selection-end-line="46" selection-end-column="29" />
+          <folding>
+            <marker date="1536240920197" expanded="true" signature="959:964" ph="..." />
+            <marker date="1536240920197" expanded="true" signature="1040:1053" ph="..." />
+            <marker date="1536240920197" expanded="true" signature="1396:2048" ph="..." />
+            <marker date="1536240920197" expanded="true" signature="1535:1552" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

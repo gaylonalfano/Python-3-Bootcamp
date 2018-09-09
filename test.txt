@@ -1,1 +1,0 @@
-print Adding test.txt via terminal in PC. Want to see if I can maintain git vc after pushing this then moving the entire project under the PyCharmProjects dir.
