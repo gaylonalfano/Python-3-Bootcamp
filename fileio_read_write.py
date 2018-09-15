@@ -22,6 +22,8 @@ file.readline()
 file.readlines()  # returns a LIST of lines
 file.close()  # closes a file. Need to open() again
 file.closed  # Checks whether a file is closed
+file.write()
+file.truncate()
 
 If you try to read() a closed file you'll get a ValueError: I/O operation on closed file
 
@@ -123,18 +125,18 @@ JSON - JAVASCRIPT OBJECT NOTATION
 #     file.write("haha" * 10000)
 
 # COPY EXERCISE - Takes in a file name and a new file name and copies contents
-# Alice_Original.txt and Alice_Copy.txt
+#Alice_Original.txt and Alice_Copy.txt
 # def copy(original, new):
 #     with open(original) as file:
 #         original_text = file.read()
 #     with open(new, "w") as file:
 #         file.write(original_text)
 
-# Student's solution:
-# def copy(file_name, new_file):
-#     with open(file_name) as file:
-#         with open(new_file, 'w') as n_file:
-#             n_file.write(file.read())
+# # # Student's solution:
+# # # def copy(file_name, new_file):
+# # #     with open(file_name) as file:
+# # #         with open(new_file, 'w') as n_file:
+# # #             n_file.write(file.read())
 
 # copy("Alice_Original.txt", "Alice_Copy.txt")
 
@@ -167,24 +169,24 @@ JSON - JAVASCRIPT OBJECT NOTATION
 #     return {'lines': len(lines) ,'words': len(words), 'characters': len(characters)}
 
 # My 2nd submission:
-def statistics(file_name):
-    with open(file_name) as file:
-        text = file.read()
-        lines = 
+# def statistics(file_name):
+#     with open(file_name) as file:
+#         text = file.read()
+#         lines = 
 
 # Colt's solution w/ generator expressions
-def statistics2(file_name):
-    with open(file_name) as file:
-        text = file.readlines()
+# def statistics2(file_name):
+#     with open(file_name) as file:
+#         text = file.readlines()
     
-    return {'lines': len(text), 
-            'words': sum(len(line.split(" ")) for line in text), # This is pretty neat
-            'characters': sum(len(line) for line in text)
-    }
+#     return {'lines': len(text), 
+#             'words': sum(len(line.split(" ")) for line in text), # This is pretty neat
+#             'characters': sum(len(line) for line in text)
+#     }
 
 
-print(statistics("Alice_Original.txt"))
-print(statistics2("Alice_Original.txt"))
+# print(statistics("Alice_Original.txt"))
+# print(statistics2("Alice_Original.txt"))
 
 
 # Student solution:
@@ -210,4 +212,25 @@ print(statistics2("Alice_Original.txt"))
 
 
 
+# FIND AND REPLACE
+# def find_and_replace(file_name, old, new):
+#     with open(file_name, "r+") as file:
+#         text = file.read()
+#         file.seek(0)
+#         text = text.replace(old, new)
 
+# def find_and_replace(file_name, old, new):
+#     with open(file_name, "r+") as file:
+#         text = file.read()
+#         new_text = text.replace(old, new)
+#         file.seek(0)
+#         file.write(new_text)
+#         file.truncate()  # Deletes anything after the current cursor position
+
+# Student solution (better):
+def find_and_replace2(file, was, willbe):
+    with open(file, "r+") as file:
+        file.write(file.read().replace(was, willbe))
+
+
+find_and_replace2("Alice_Copy.txt", "Alice", "Aaron")
