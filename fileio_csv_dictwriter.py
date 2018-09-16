@@ -11,7 +11,6 @@ with open("fighters.csv", "w") as file:
     csv_writer.writerow(["Ryu", "Hadouken"])
 
 
-
 WRITE USING DictWriter:
 DictWriter - creates a writer object for writing using dictionaries
 fieldnames - kwarg for the DictWriter specifying headers
@@ -116,7 +115,7 @@ def add_user(first_name, last_name):
 
 # print_users()
 
-# Using reader instead DictReader
+# Using READER
 from csv import reader
 
 def print_users():
