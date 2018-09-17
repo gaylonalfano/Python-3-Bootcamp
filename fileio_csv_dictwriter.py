@@ -126,3 +126,33 @@ def print_users():
             print("{} {}".format(user[0], user[1]))
 
 print_users()
+
+
+# FIND_USER - Takes a first and last name and searches users.csv.
+# If found, find_user returns the index where the user is found. 
+# Otherwise, it returns a message stating user wasn't found.
+# from csv import DictReader
+# OOPS! I need to return INDEX. Not sure if DictReader can do this!!!
+# def find_user(first_name, last_name):
+#     with open("users.csv") as file:
+#         csv_reader = DictReader(file, fieldnames=["First Name", "Last Name"])
+#         for row in csv_reader:
+#             if row['fn'] == first_name and row['ln'] == last_name:
+#                 return row
+
+# from csv import reader
+
+# def find_user(first_name, last_name):
+#     with open("users.csv") as file:
+#         csv_reader = list(reader(file))
+#         for user in csv_reader:
+#             #if user[0] == first_name and user[1] == last_name:
+#             if [first_name, last_name] in user:
+#                 return user.index([first_name, last_name])
+#             return f"{first_name} {last_name} not found."
+
+
+# print(find_user("Colt", "Steele"))
+# print(find_user("Dwayne", "Johnson"))
+
+
