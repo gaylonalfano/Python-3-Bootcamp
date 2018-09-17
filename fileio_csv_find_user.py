@@ -1,5 +1,7 @@
 """
 KEY LEARNINGS:
+I need to read up again on Try/Except statements
+
 a = b == c syntax -- This is a boolean expression that evalues to True or False being saved to a var (a)
 Could think of it like: a = (b == c).
 
@@ -77,15 +79,22 @@ for (count,item) in enumerate(l1):
 
 # ("FN", "Gaylon") in d.items()  # True
 
+
+
+
+
+
+
+
 # DictReader attempt. Here's a sample DictReader output
-# OrderedDict([('First Name', 'Colt'), ('Last Name', 'Steele')])
-# OrderedDict([('First Name', 'Dwayne'), ('Last Name', 'Johnson')])
-# for count, item in enumerate(csv_reader):
-#   print(count, item)  # 0 OrderedDict([('First Name', 'Colt'), ('Last Name', 'Steele')])
-#   print(item.values()) # odict_values(['Colt', 'Steele'])
+'''
+OrderedDict([('First Name', 'Colt'), ('Last Name', 'Steele')])
+OrderedDict([('First Name', 'Dwayne'), ('Last Name', 'Johnson')])
+for count, item in enumerate(csv_reader):
+  print(count, item)  # 0 OrderedDict([('First Name', 'Colt'), ('Last Name', 'Steele')])
+  print(item.values()) # odict_values(['Colt', 'Steele'])
 
-
-
+'''
 
 from csv import DictReader
 
@@ -93,11 +102,14 @@ def find_user2(first_name, last_name):
     with open("users.csv") as file:
         csv_reader = DictReader(file)  # Don't have to state fieldnames?
         for count, item in enumerate(csv_reader):
-            # if item["First Name"] == first_name and item["Last Name"] == last_name:
-            #     return count
-            # return f"{first_name} {last_name} not found."
-            print(count, item.values())
-            print(item.values().get("Colt", "Steele"))
+            if item["First Name"] == first_name and item["Last Name"] == last_name:
+                return count
+            return f"{first_name} {last_name} not found."
+'''
+Random testing - Nothing worked really
+
+            # print(count, item.values())
+            # print(item.get("Colt", "Steele"))
 
 
             # if (first_name, last_name) in item.items():
@@ -109,7 +121,21 @@ def find_user2(first_name, last_name):
             # if (first_name, last_name) in row:
             #     return True
             # return "Not found."
+'''
 
+print(find_user2("Dwayne", "Johnson"))
 print(find_user2("Colt", "Steele"))
-# print(find_user2("Dwayne", "Johnson"))
-# print(find_user2("Not", "Here"))
+print(find_user2("Not", "Here"))
+
+
+# STUDENT SOLUTION WITH READER AND TRY/EXCEPT:
+
+import csv
+def find_user(first_name, last_name):
+    with open("users.csv", 'r') as file:
+        csv_reader = list(csv.reader(file))
+        try:
+            result = csv_reader.index([first_name, last_name])
+            return result
+        except ValueError:
+            return "{} {} not found.".format(first_name, last_name)
