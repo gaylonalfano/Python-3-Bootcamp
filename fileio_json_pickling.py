@@ -47,6 +47,9 @@ but instead it works with JSON. Serializes/de-serializes complex data into JSON.
 jsonpickle.encode(object)
 jsonpickle.decode()
 
+The main difference btw Pickle is that the data is stored in a way that OTHER
+languages could take it and parse this and use it if we needed to. 
+
 """
 import jsonpickle
 
@@ -63,12 +66,14 @@ class Cat:
 # with open("cat.json", "w") as file:
 #     frozen = jsonpickle.encode(c)
 #     file.write(frozen)
-    # The cat.json file now has: {"py/object": "__main__.Cat", "breed": "Tabby", "name": "Charles"}
+# The cat.json file now has: {"py/object": "__main__.Cat", "breed": "Tabby", "name": "Charles"}
 
 # Next, the cool thing is when we want to DECODE (be sure to comment out ENCODE!):
 with open("cat.json", "r") as file:
     contents = file.read()
     unfrozen = jsonpickle.decode(contents)
-    print(unfrozen)
+    print(unfrozen)  # <__main__.Cat object at 0x10ce63080> 
+# If our Cat Class had methods, we could start calling methods on this Cat object. COOL!
+
 
 

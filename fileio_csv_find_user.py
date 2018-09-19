@@ -34,7 +34,7 @@ for (count,item) in enumerate(l1):
 # #                 return user.index([first_name, last_name])
 # #             return f"{first_name} {last_name} not found."
 
-# # Without for loop just search in list
+# # MY SOLUTION W/ READER Without for loop just search in list
 # def find_user(first_name, last_name):
 #     with open("users.csv") as file:
 #         csv_reader = list(reader(file))
@@ -128,8 +128,16 @@ print(find_user2("Colt", "Steele"))
 print(find_user2("Not", "Here"))
 
 
-# STUDENT SOLUTION WITH READER AND TRY/EXCEPT:
+# STUDENT'S DICTREADER ENUMERATE:
+def find_user(first, last):
+    with open('users.csv') as f:
+        for i,r in enumerate(DictReader(f),1):
+            if r['First Name'] == first and r['Last Name'] == last:
+                return i
+        return "{} {} not found.".format(first,last)
 
+
+# STUDENT SOLUTION WITH READER AND TRY/EXCEPT:
 import csv
 def find_user(first_name, last_name):
     with open("users.csv", 'r') as file:
