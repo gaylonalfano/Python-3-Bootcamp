@@ -50,23 +50,115 @@ Handy dict reference: https://docs.python.org/3/library/stdtypes.html#dict
 >>> e = dict({'three': 3, 'one': 1, 'two': 2})
 >>> a == b == c == d == e
 
+
+KEY LEARNINGS:
+Can't nest WITH statements if working on the same file. Need to read and store into a var.
+
+
 """
 # UPDATE_USERS - Need to use read and write???
 import csv
 
 def update_users(old_first, old_last, new_first, new_last):
-    with open("users.csv", "r+") as file:
-        csv_reader = csv.DictReader(file)  # fieldnames=Defaults to first row
+    with open("users.csv") as file:
+        csv_reader = list(csv.DictReader(file))
+    with open("users.csv", "w") as file:
         csv_writer = csv.DictWriter(file, fieldnames=["First Name", "Last Name"])
-        #print(list(csv_reader))  # [('First Name', 'Colt'), ('Last Name', 'Steele')]
-        # Need to open with "w" or "r+" to update?
+        csv_writer.writeheader()
         users_updated = 0
         for row in csv_reader:
             if row["First Name"] == old_first and row["Last Name"] == old_last:
-                # row["First Name"] = csv_writer.writerow({"First Name": new_first}) - This appends at end with linebreak
-                # row["Last Name"] = csv_writer.writerow({"Last Name": new_last})
+                csv_writer.writerow({"First Name": new_first, "Last Name": new_last}) 
                 users_updated += 1
-        return f"Users updated: {users_updated}."
+            else:
+                csv_writer.writerow({"First Name": row["First Name"], "Last Name": row["Last Name"]})
+
+        return "Users updated: {}.".format(users_updated)   #f"Users updated: {users_updated}."
+
+#print(update_users('Gaylon', 'Alfano', "Aaron", "Anthony"))
+print(update_users('Not', 'Here', "Still Not", "Here"))
+
+
+# COLT'S SOLUTION USING READER/WRITER:
+import csv
+ 
+def update_users(old_first, old_last, new_first, new_last):
+    with open("users.csv") as csvfile:
+        csv_reader = csv.reader(csvfile)
+        rows = list(csv_reader)
+ 
+    count = 0
+    with open("users.csv", "w") as csvfile:
+        csv_writer = csv.writer(csvfile)
+        for row in rows:
+            if row[0] == old_first and row[1] == old_last:
+                csv_writer.writerow([new_first, new_last])
+                count += 1
+            else:
+                csv_writer.writerow(row)
+ 
+    return "Users updated: {}.".format(count)
+
+
+# STUDENT SOLUTION DICTREADER/DICTWRITER
+from csv import DictReader, DictWriter
+ 
+def update_users(old_first, old_last, new_first, new_last):
+    count = 0
+    with open("users.csv") as f:
+        data = list(DictReader(f))
+        for row in data:
+            if row["First Name"] == old_first and row["Last Name"] == old_last:
+                row["First Name"], row["Last Name"] = new_first, new_last
+                count += 1
+    with open("users.csv", "w", newline="") as file:
+        headers = ("First Name", "Last Name")
+        csv_writer = DictWriter(file, fieldnames=headers)
+        csv_writer.writeheader()
+        for row in data:
+            csv_writer.writerow({
+                "First Name": row["First Name"],
+                "Last Name": row["Last Name"]
+            })
+    return "Users updated: {}.".format(count)
+
+
+
+
+
+
+# ======= BELOW are my broken attempts ========
+
+# def update_users(old_first, old_last, new_first, new_last):
+#     with open("users.csv", "r+") as file:
+#         csv_reader = csv.DictReader(file)  # fieldnames=Defaults to first row
+#         #csv_writer = csv.DictWriter(file, fieldnames=["First Name", "Last Name"])
+#         #print(list(csv_reader))  # [('First Name', 'Colt'), ('Last Name', 'Steele')]
+#         # Need to open with "w" or "r+" to update?
+#         users_updated = 0
+#         for row in csv_reader:
+#             if row["First Name"] == old_first and row["Last Name"] == old_last:
+#                 row['First Name'] = new_first
+#                 row["Last Name"] = new_last
+#                 # row["First Name"] = csv_writer.writerow({"First Name": new_first}) - This appends at end with linebreak
+#                 # row["Last Name"] = csv_writer.writerow({"Last Name": new_last})
+#                 users_updated += 1
+#         return f"Users updated: {users_updated}."
             
 
-update_users('Gaylon', 'Alfano', "Aaron", "Anthony")
+# def update_users(old_first, old_last, new_first, new_last):
+#     with open("users.csv") as file:
+#         csv_reader = csv.DictReader(file)
+#         with open("users.csv", "w") as file:
+#             csv_writer = csv.DictWriter(file, fieldnames=["First Name", "Last Name"])
+#             users_updated = 0
+#             for row in csv_reader:
+#                 if row["First Name"] == old_first and row["Last Name"] == old_last:
+#                     csv_writer.writerow({"First Name": new_first, "Last Name": new_last}) 
+#                     users_updated += 1
+#                 else:
+#                     csv_writer.writerow({"First Name": old_first, "Last Name": old_last})
+#             return f"Users updated: {users_updated}."
+
+
+
