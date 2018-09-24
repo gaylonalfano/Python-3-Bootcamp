@@ -17,7 +17,7 @@ Order of Approach (I think):
 2. pages[0].get("href") OR pages[0]["href"]  # /blog?page=n
 3. time.sleep(10) to delay between requests
 4. Call a function in another function: range(1, get_total_pages()+1)
-5. soup.select("article a") returns a list of ALL articles on the site, regardless of pages
+5. soup.select("article a") returns a list of 25 articles on the site, regardless of pages...not sure why
 
 """
 # SECOND ATTEMPT:
@@ -29,13 +29,11 @@ def get_total_pages():
     soup = BeautifulSoup(r.text, "html.parser")
     last_page_elem = soup.select(".last [href]")
     total_pages = int(last_page_elem[0]["href"][-1])
-    print(f"Total pages: {total_pages}")
     return total_pages
 
 def get_page_urls():
     base_url = "https://www.rithmschool.com/blog?page="
     urls = [base_url+str(n) for n in range(1,get_total_pages()+1)]
-    print(f"All URLs: {urls}")
     return urls 
 
 with open("scrape_blog_all_pages_functions.csv", "a") as file:
