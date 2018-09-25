@@ -16,7 +16,7 @@ Order of Approach (I think):
 1. soup.select(".class tag")  # List of all matches! Ex. soup.select(".pagination a")
 2. pages[0].get("href") OR pages[0]["href"]  # /blog?page=n
 3. time.sleep(10) to delay between requests
-4. Call a function in another function: range(1, get_total_pages()+1)
+4. Call a function in another function: ran ge(1, get_total_pages()+1)
 5. soup.select("article a") returns a list of 25 articles on the site, regardless of pages...not sure why
 
 """
