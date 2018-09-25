@@ -57,6 +57,39 @@ KEY LEARNINGS:
 import requests, csv, time
 from bs4 import BeautifulSoup
 
+# SAVED TO LIST: SCRAPE PAGE FOR QUOTES, AUTHORS, BIO URLS
+num = 1
+with open("web_scraping_quotes.csv", "a") as file:
+    csv_writer = csv.writer(file)
+    csv_writer.writerow(["Quote", "Author", "BioURL"])
+    request_url = "http://quotes.toscrape.com/page/"
+    while True:
+        r = requests.get(request_url+str(num))
+        soup = BeautifulSoup(r.text, "html.parser")
+        try:
+            next_page_href= soup.find(class_="next").find("a")["href"]
+            next_page_number = int(next_page_href[-2:-1])
+        except AttributeError:
+            print("Looks like you've reached the last page. Total number of pages is: " + str(num))
+            break
+        quotes = [quote.get_text() for quote in soup.select(".quote .text")]
+        authors = [author.get_text() for author in soup.select(".author")]
+        bios_urls = [bio.find_next_sibling("a")["href"] for bio in soup.select(".author")]
+        for i in range(len(quotes)):
+            csv_writer.writerow([quotes[i], authors[i], bios_urls[i]])
+        
+        print(f"Completed page: {num}. Waiting 3 seconds to start page: {num+1}")
+        time.sleep(3)
+        num += 1
+
+# Can I create a function where you pass 'soup' and it then generates
+# quotes, authors, bios, etc.?
+
+
+
+
+
+# SAVED TO CSV: SCRAPE PAGE FOR QUOTES, AUTHORS, BIO URLS
 # num = 1
 # with open("web_scraping_quotes.csv", "a") as file:
 #     csv_writer = csv.writer(file)
@@ -80,18 +113,9 @@ from bs4 import BeautifulSoup
 #         print(f"Completed page: {num}. Waiting 3 seconds to start page: {num+1}")
 #         time.sleep(3)
 #         num += 1
-            
 
 
-
-        
-        
-        
-        
-
-
-    
-# HELPER
+# QUOTES HELPER
 # r = requests.get("http://quotes.toscrape.com")
 # soup = BeautifulSoup(r.text, "html.parser")
 
@@ -131,8 +155,3 @@ from bs4 import BeautifulSoup
 # Function to extract_write quote, author, and bio url????
 # def extract_quote_author_bio():
 #     """Extract all quotes, authors, and bio URLs from a page"""
-
-
-
-
-
