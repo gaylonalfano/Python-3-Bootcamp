@@ -1,4 +1,4 @@
-# What is a function?
+∫# What is a function?
 # methods vs. functions -- all functions really.
 # Function = a process for executing a task. Don't always get the same result; depends on input
 # Useful way fo executing similar procedures over and over

@@ -15,6 +15,8 @@ Step 1. if answer == "yes"
 Step 2. if True, answer set to 'no'
 Step 3. otherwise if False, answer set to 'yes'
 
+Another example from webscraping section while looking for a "Next" button url:
+url = next_btn.find('a')['href'] if next_btn else None 
 
 '''
 # Incorrect since it's not infinite:
