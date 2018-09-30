@@ -100,7 +100,7 @@ birthday_hint = soup.find(class_="author-born-date").get_text()
 birth_location_hint = soup.find(class_="author-born-location").get_text()
 
 name = soup.find(class_="author-title").get_text().split(' ')
-initials_hint = name[0][0], name[1][0]
+initials_hint = name[0][0] + ' ' + name[1][0]
 fn_letters_hint = len(name[0])
 ln_letters_hint = len(name[1])
 
@@ -112,10 +112,10 @@ for variation in name_variations:
     description_hint = description_hint.replace(variation, "@"*len(variation))
 
 all_hints = {
-    4: f"The author was born {birthday_hint} in {birth_location_hint}",
-    3: f"The author's initials are: {initials_hint}",
-    2: f"The author's first name and last name have {fn_letters_hint} and {ln_letters_hint} letters respectively",
-    1: f"Here's the author's bio with their name removed: {description_hint}"
+    3: f"The author was born {birthday_hint} in {birth_location_hint}",
+    2: f"The author's initials are: {initials_hint}",
+    1: f"The author's first name and last name have {fn_letters_hint} and {ln_letters_hint} letters respectively"
+    #1: f"Here's the author's bio with their name removed: {description_hint}"
 }
 
 # Guessing game logic
@@ -124,17 +124,18 @@ number_of_guesses = 4
 
 print(f"Let's play a guessing game. You have {number_of_guesses} chances to guess the correct author of a quote.")
 print(f"Here's the quote: {random_entry[0]}")
-while number_of_guesses >= 0:
+while number_of_guesses > 0:
     user_guess = input("Guess the author: ")
     if user_guess == random_entry[1]:
         print(f"You're right! The author is: {random_entry[1]}. Great job!")
         break
+    elif number_of_guesses-1 == 0:
+            print(f"The correct answer is: {random_entry[1]}. Better luck next time.")
+            break
     else:
+        number_of_guesses -= 1
         print(f"That's incorrect. Here's a hint: {all_hints[number_of_guesses]}")
-
-    number_of_guesses -= 1
-print(f"The correct answer is: {random_entry[1]}. Better luck next time.")
-
+        
 
 
 # EXTRACT HINT DATA HELPER
