@@ -64,8 +64,15 @@ POSSIBLE WAYS TO REFACTOR:
 import requests, csv, time
 from bs4 import BeautifulSoup
 from random import choice, randint
+from pyfiglet import figlet_format
+from termcolor import colored
 
 # Extract the quote data
+title = figlet_format("Guess the Author")
+title = colored(title, color='cyan')
+print(title)
+print("Scraping data... please wait...")
+
 num = 1
 page_request_url = "http://quotes.toscrape.com/page/"
 all_quotes = []
@@ -76,7 +83,7 @@ while True:
         next_page_href = soup.find(class_="next").find("a")["href"]
         next_page_number = int(next_page_href[-2:-1])
     except AttributeError:
-        print(f"Tried to find page {next_page_number} but only scraped {str(num)} pages total.")
+        print(f"Scraped {str(num)} pages total...")
         break
     quotes = [quote.get_text() for quote in soup.select(".quote .text")]
     authors = [author.get_text() for author in soup.select(".author")]
@@ -84,7 +91,7 @@ while True:
     for i in range(len(quotes)):
         all_quotes.append([quotes[i], authors[i], bios_urls[i]])
     
-    print(f"Completed page {num}. Waiting 1 second before starting page {next_page_number}")
+    # print(f"Completed page {num}. Waiting 1 second before starting page {next_page_number}")
     time.sleep(1)
     num += 1
 
@@ -92,7 +99,7 @@ while True:
 
 # Create the play/play again while loop
 while True:
-    wanna_play = input("Want to play a 'Guess the Quote' game? (y/n) ")
+    wanna_play = input("Ready to play? (y/n) ")
     if wanna_play.upper() == 'N':
         print("Thanks for playing! See you next time!")
         break
