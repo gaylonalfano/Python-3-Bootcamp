@@ -63,19 +63,14 @@ def extract_page(quote_soup, extracted_data):
     for i in range(len(quotes)):
         extracted_data.append([quotes[i], authors[i], bios_urls[i]])
 
-
-# EXTRACT BIO PAGE INFO
-def select_parse_author_bio(bio_url, all_extracted_data):  # coming from extract_all_pages
-    """Randomly select an entry and parse that author's bio page"""
-    random_entry = choice(all_extracted_data)
+# EXTRACT BIO PAGE INFO AND GENERATE HINTS
+def extract_bio_generate_hints(): 
+    """Randomly select an entry, parse bio page and generate hints"""
+    bio_url = "http://quotes.toscrape.com"
+    random_entry = choice(extract_all_pages(url, all_extracted_data))
     response = requests.get(bio_url+random_entry[2])
     bio_soup = BeautifulSoup(response.text, "html.parser")
-    # Consider returning bio_soup?
-    # return bio_soup
-    return generate_hints(bio_soup)  # returns all_hints DICT
 
-def generate_hints(bio_soup):
-    """Extract and store hints from selected author's bio page"""
     # Birthday hint
     birthday_hint = bio_soup.find(class_="author-born-date").get_text()
     birth_location_hint = bio_soup.find(class_="author-born-location").get_text()
@@ -101,17 +96,16 @@ def generate_hints(bio_soup):
         1: f"The author's first name and last name have {fn_letters_hint} and {ln_letters_hint} letters respectively"
         #1: f"Here's the author's bio with their name removed: {description_hint}"
     }
-    return all_hints
 
+    start_guessing(random_entry, all_hints)  # Trouble with random_entry since it's choice()
+    #return all_hints # since this returns here does it all return for select_parse if I don't 'return'??
 
 # PLAY GAME / PLAY AGAIN FUNCTION
 def start_game():
     """Launches the game and scrapes for quote, author, and bio url data"""
     display_game_title("Guess the Author")
-    # url = "http://quotes.toscrape.com/page/"
-    # all_extracted_data = []
-    #extract_all_pages(url, all_extracted_data)  # Returns all_extracted_data
-    start_guessing(extract_all_pages(url, all_extracted_data))
+    extract_all_pages(url, all_extracted_data)  # Returns all_extracted_data
+    #start_guessing(extract_all_pages(url, all_extracted_data))
 
 def display_game_title(game_title):
     title = figlet_format(game_title)
@@ -126,10 +120,8 @@ def display_game_title(game_title):
 #             break
 
 
-def start_guessing(all_extracted_data):
-    """Gives user four guesses to guess correct author and displays after every incorrect guess"""
-    random_entry = choice(all_extracted_data)
-    select_parse_author_bio(bio_request_url, all_extracted_data)  # returns all_hints dict
+def start_guessing(random_entry, hints):
+    """Gives user four guesses to guess correct author and displays hint after every incorrect guess"""
     number_of_guesses = 4
     print(f"You have {number_of_guesses} chances to guess the correct author of a quote.")
     print(f"Here's the quote: {random_entry[0]}")
@@ -143,23 +135,20 @@ def start_guessing(all_extracted_data):
                 break
         else:
             number_of_guesses -= 1
-            print(f"That's incorrect. Here's a hint: {all_hints[number_of_guesses]}")
+            print(f"That's incorrect. Here's a hint: {hints[number_of_guesses]}")
 
 
 url = "http://quotes.toscrape.com/page/"
 all_extracted_data = []
-bio_request_url = "http://quotes.toscrape.com"
+
 # Lauch the game and extract quote, author, bio url data
-start_game() # returns all_extracted_data
-#start_guessing() 
+print(start_game()) # None
+
+print(f"PRINTING ALL EXTRACTED DATA: {all_extracted_data}")
+
 #select_parse_author_bio(bio_request_url, all_extracted_data)  # returns all_hints dict
 
 #generate_hints(select_parse_author_bio(bio_request_url, extract_all_pages(url, all_extracted_data)))  # returns all_hints dict
-
-#start_guessing(extract_all_pages(url, all_extracted_data))
-# Randomly select an entry and extra bio for hints
-
-
 
 
 """
