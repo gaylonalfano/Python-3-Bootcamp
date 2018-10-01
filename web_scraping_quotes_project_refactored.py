@@ -24,6 +24,7 @@ POSSIBLE WAYS TO REFACTOR:
 KEY LEARNINGS/QUESTIONS:
 1. If calling a function that returns a value INSIDE another function, do you 
     still have to add "return"? (Ex. start_guessing() inside has select_parse that returns all_hints list)
+2. Good or bad to have parameters for functions? Can become a jumbled mess: generate_hints(select_parse_author_bio(bio_request_url, extract_all_pages(url, all_extracted_data)))
 """
 import requests, csv, time
 from bs4 import BeautifulSoup
@@ -32,10 +33,9 @@ from pyfiglet import figlet_format
 from termcolor import colored
 
 # CRAWL ALL PAGES
-# url = "http://quotes.toscrape.com/page/"
-# all_extracted_data = []
-def extract_all_pages(url, all_extracted_data):
+def extract_all_pages(url):
     """Sends a request and parses HTML. Crawls all pages and extracts data."""
+    all_extracted_data = []
     num = 1
     while True:
         response = requests.get(url+str(num))
@@ -49,7 +49,6 @@ def extract_all_pages(url, all_extracted_data):
         print(f"Scraping page {num}. Please wait...")
         extract_page(quote_soup, all_extracted_data)
         time.sleep(1)
-        
         num += 1
     
     return all_extracted_data
@@ -64,10 +63,10 @@ def extract_page(quote_soup, extracted_data):
         extracted_data.append([quotes[i], authors[i], bios_urls[i]])
 
 # EXTRACT BIO PAGE INFO AND GENERATE HINTS
-def extract_bio_generate_hints(): 
+def extract_bio_generate_hints(random_entry): 
     """Randomly select an entry, parse bio page and generate hints"""
     bio_url = "http://quotes.toscrape.com"
-    random_entry = choice(extract_all_pages(url, all_extracted_data))
+    # random_entry = choice(extract_all_pages(url, all_extracted_data))
     response = requests.get(bio_url+random_entry[2])
     bio_soup = BeautifulSoup(response.text, "html.parser")
 
@@ -91,34 +90,21 @@ def extract_bio_generate_hints():
 
     # Store all hints
     all_hints = {
-        3: f"The author was born {birthday_hint} in {birth_location_hint}",
+        3: f"The author was born {birthday_hint} {birth_location_hint}",
         2: f"The author's initials are: {initials_hint}",
         1: f"The author's first name and last name have {fn_letters_hint} and {ln_letters_hint} letters respectively"
         #1: f"Here's the author's bio with their name removed: {description_hint}"
     }
 
-    start_guessing(random_entry, all_hints)  # Trouble with random_entry since it's choice()
-    #return all_hints # since this returns here does it all return for select_parse if I don't 'return'??
+    return all_hints  # can you return multiple things? Yes, as a tuple is one way.
 
-# PLAY GAME / PLAY AGAIN FUNCTION
-def start_game():
-    """Launches the game and scrapes for quote, author, and bio url data"""
-    display_game_title("Guess the Author")
-    extract_all_pages(url, all_extracted_data)  # Returns all_extracted_data
-    #start_guessing(extract_all_pages(url, all_extracted_data))
+    #start_guessing(random_entry, all_hints)  # Trouble with random_entry since it's choice()
+    #return all_hints # since this returns here does it all return for select_parse if I don't 'return'??
 
 def display_game_title(game_title):
     title = figlet_format(game_title)
     title = colored(title, color='cyan')
     print(title)
-
-# def play_again():
-#     while True:
-#         wanna_play = input("Ready to play? (y/n) ")
-#         if wanna_play.upper() == 'N':
-#             print("Thanks for playing! See you next time!")
-#             break
-
 
 def start_guessing(random_entry, hints):
     """Gives user four guesses to guess correct author and displays hint after every incorrect guess"""
@@ -137,16 +123,23 @@ def start_guessing(random_entry, hints):
             number_of_guesses -= 1
             print(f"That's incorrect. Here's a hint: {hints[number_of_guesses]}")
 
+# PLAY GAME / PLAY AGAIN FUNCTION
+def play_game():
+    """Launches the game, scrapes data, generates hints, and offers chance to replay"""
+    url = "http://quotes.toscrape.com/page/"
+    display_game_title("Guess the Author")
+    all_extracted_data = extract_all_pages(url)  # Returns all_extracted_data
+    while True:
+        wanna_play = input("Ready to play? (y/n) ")
+        if wanna_play.upper() == "N":
+            print("No worries! See you next time.")
+            break
+        else:
+            random_entry = choice(all_extracted_data)
+            all_hints = extract_bio_generate_hints(random_entry)
+            start_guessing(random_entry, all_hints)
 
-url = "http://quotes.toscrape.com/page/"
-all_extracted_data = []
-
-# Lauch the game and extract quote, author, bio url data
-print(start_game()) # None
-
-print(f"PRINTING ALL EXTRACTED DATA: {all_extracted_data}")
-
-#select_parse_author_bio(bio_request_url, all_extracted_data)  # returns all_hints dict
+play_game()
 
 #generate_hints(select_parse_author_bio(bio_request_url, extract_all_pages(url, all_extracted_data)))  # returns all_hints dict
 
