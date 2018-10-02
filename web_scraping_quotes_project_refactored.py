@@ -25,6 +25,8 @@ KEY LEARNINGS/QUESTIONS:
 1. If calling a function that returns a value INSIDE another function, do you 
     still have to add "return"? (Ex. start_guessing() inside has select_parse that returns all_hints list)
 2. Good or bad to have parameters for functions? Can become a jumbled mess: generate_hints(select_parse_author_bio(bio_request_url, extract_all_pages(url, all_extracted_data)))
+3. Halo spinner for terminal, IPython and Jupyter: https://github.com/ManrajGrover/halo
+
 """
 import requests, csv, time
 from bs4 import BeautifulSoup
