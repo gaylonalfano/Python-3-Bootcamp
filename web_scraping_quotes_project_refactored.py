@@ -355,15 +355,6 @@ game()
 
 
 
-
-
-
-
-
-
-
-
-
 """
 COMPLETED BASE FUNCTIONALITY VERSION:
 
@@ -454,5 +445,109 @@ while True:
             else:
                 number_of_guesses -= 1
                 print(f"That's incorrect. Here's a hint: {all_hints[number_of_guesses]}")
+
+"""
+
+
+"""
+============================================================================================================
+COLT'S WALKTHROUGH FOR REFACTORING - BASE FUNCTIONALITY IS COMPLETE (SEE BELOW). 
+Colt wants to store the scraping to a CSV file. However, he doesn't want to save to CSV 
+every time the game runs, so he created a seperate file for saving the scraping functionality. 
+See "web_scraping_colts_csv.py"
+
+
+
+Here's the un-refactored version:
+COLT'S WALKTHROUGH
+
+from bs4 import BeautifulSoup
+from time import sleep
+from random import choice
+
+#all_quotes = []  # During refactoring, moved to inside scrape_quotes()
+BASE_URL = "http://quotes.toscrape.com"  # This is a CONSTANT, so should use CAPS (originally 'base_url')
+#url = "/page/1"  # During refactoring, moved to inside scrape_quotes()
+
+def scrape_quotes():
+    all_quotes = []
+    url = "/page/1"
+    while url:
+        res = requests.get(f"{BASE_URL}{url}")
+        print(f"Now scraping {BASE_URL}{url}...")
+        soup = BeautifulSoup(res.text, "html.parser")
+        quotes = soup.find_all(class_="quote")
+
+        for quote in quotes:
+            all_quotes.append({
+                "text": quote.find(class_="text").get_text(),
+                "author": quote.find(class_="author").get_text(),
+                "bio-link": quote.find("a")["href"]
+            })
+        next_button = soup.find(class_="next")
+        url = next_button.find("a")["href"] if next_button else None  # Neat one liner
+        sleep(2)
+    return all_quotes
+    # print(all_quotes)
+
+# Colt said it would be better/ideal to save the quotes to a file
+# So when you actually run the game, the game would start by loading that file
+
+# Build game logic
+
+def start_game(quotes):
+    # playing = True
+    # while playing:  One way to repeat game. Better is to use a function start_game()
+    quote = choice(quotes)
+    remaining_guesses = 4
+    print("Here's a quote: ")
+    print(quote["text"])
+    print(quote["author"])  # for testing
+    guess = ""
+
+    while guess.lower() != quote["author"].lower() and remaining_guesses > 0:
+        guess = input(f"Who said this quote? Guess remaining: {remaining_guesses} ")
+        if guess.lower() == quote["author"].lower():
+            print("YOU GOT IT RIGHT!")
+            break
+        remaining_guesses -= 1
+        if remaining_guesses == 3:
+            res = requests.get(f"{BASE_URL}{quote['bio-link']}")
+            soup = BeautifulSoup(res.text, "html.parser")
+            #print(soup.body) for testing
+            birth_date = soup.find(class_="author-born-date").get_text()
+            birth_place = soup.find(class_="author-born-location").get_text()
+            print(f"Here's a hint: The author was born on {birth_date} {birth_place}")
+        elif remaining_guesses == 2:
+            print(f"Here's a hint: The author's first name starts with: {quote['author'][0]}")
+        elif remaining_guesses == 1:
+            last_initial = quote["author"].split(" ")[1][0]
+            print(f"Here's a hint: The author's last name starts with: {last_initial}")
+        else:
+            print(f"Sorry you ran out of guesses. The answer was {quote['author']}")
+
+    # print("AFTER WHILE LOOP")  # For testing while building game logic
+    # Now to allow user to play multiple times
+    '''
+    Colt mentioned two ways of repeating the game. 1. Could put all of this into a giant loop. 
+    Ex. At the very top above quote = choice(all_quotes), could add:
+    playing = True
+    while playing:
+        ...
+    And then at the very bottom when you ask if they want ot play again, can set playing = False
+
+    OR, a second solution is to put it all into a FUNCTION. 
+    '''
+    play_again = ''  # to start it off
+    while play_again.lower() not in ('y', 'yes', 'n', 'no'):
+        play_again = input("Would you like to play again (y/n)? ")
+    if play_again.lower() in ('yes', 'y'):   # alternate syntax: is 'yes' or is 'y'
+        #print('OK YOU PLAY AGAIN')  # Could set playing = True
+        return start_game(quotes)
+    else:
+        print("OK, GOODBYE!")  # Could set playing = False
+
+quotes = scrape_quotes()  # After adding scrape_quotes(), have to call it first
+start_game(quotes)  # After we got start_game() working, we then made a function out of scraping
 
 """
