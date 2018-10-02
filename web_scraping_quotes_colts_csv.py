@@ -2,6 +2,11 @@
 Colt's refactored version using CSV. Doesn't want to write to CSV each time game is run. This is 
 now a great way to update your data if/when the website updates its data or changes its code. 
 
+After this one was completed, he created a separate file to incorporate READ CSV functionality so that
+we don't WRITE each time it's run. See:
+
+"web_scraping_quotes_project_refactored_colts.py"
+
 
 I actually wrote to CSV the first time I started building this app. Here's my old code:
 
