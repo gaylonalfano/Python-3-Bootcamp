@@ -9,7 +9,7 @@ conn = sqlite3.connect("my_friends.db")
 # 1. Create the Cursor object
 c = conn.cursor()
 # 2. Execute some SQL
-#c.execute("CREATE TABLE friends (first_name TEXT, last_name TEXT, closeness INTEGER);")
+c.execute("CREATE TABLE friends (first_name TEXT, last_name TEXT, closeness INTEGER);")
 
 # BAD way of inserting data:
 # insert_query = "INSERT INTO friends VALUES ('Merriweather', 'Lewis', 7)"

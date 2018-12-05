@@ -1,5 +1,6 @@
 {
     "git.ignoreLimitWarning": true,
     "editor.suggestSelection": "recentlyUsed",
-    "python.autoComplete.addBrackets": true
+    "python.autoComplete.addBrackets": true,
+    "python.pythonPath": "/Users/gaylonalfano/anaconda3/envs/ModernPython3Bootcamp/bin/python"
 }

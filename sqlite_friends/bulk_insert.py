@@ -15,8 +15,16 @@ people = [
 # for person in people:
 #     insert that one person
 
-# To insert in bulk using executemany():
-c.executemany("INSERT INTO friends VALUES (?,?,?)", people)
+# To insert in bulk using executemany() but can only insert
+#c.executemany("INSERT INTO friends VALUES (?,?,?)", people)
+
+# To insert AND do something else with each record:
+average = 0
+for person in people:
+    c.execute("INSERT INTO friends VALUES (?,?,?)", person)
+    average += person[2]
+print(average/len(people))
+    
 
 
 # 3. Commit changes
