@@ -15,7 +15,25 @@ def scrape_books(url):
         book_data = (get_title(book), get_price(book), get_rating(book))
         # Store to all_books list:
         all_books.append(book_data)
-    print(all_books)
+    # Call save_books function to store in database:
+    save_books(all_books)
+
+def save_books(all_books):
+    '''Connects to database and performs a bulk insert'''
+    # 1. Establish connection to db
+    connection = sqlite3.connect("/Users/gaylonalfano/Python Projects/ModernPython3Bootcamp/sqlite/books.db")
+    # 2. Create cursor object
+    c = connection.cursor()
+    # 3. Execute some SQL
+    # If running this often, better to just first create db/table outside of Python:
+    c.execute('''CREATE TABLE books 
+        (title TEXT, price REAL, rating INTEGER)''')
+    query = "INSERT INTO books VALUES (?,?,?)"
+    c.executemany(query, all_books)
+    # 4. Commit your changes
+    connection.commit()
+    # 5. Close connection to db
+    connection.close()
 
 def get_title(book):
     return book.find("h3").find("a")["title"]
